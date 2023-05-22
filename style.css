@@ -1,0 +1,429 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  --main-color: #B565A7;
+  --text-color: #ffffff;
+  font-family: poppins;
+  background: black;
+  cursor: url(img/06aWCY-mouse-cursor-photos.png);
+  height: 100vh;
+}
+audio{
+  position: fixed;
+  bottom: 10px;
+  left: 5%;
+  z-index: 1000;
+ 
+}
+.fa-solid{
+  font-size: 20px;
+  margin-right: 10px;
+}
+label i{
+  color: white; 
+  font-size: 35px;
+  margin-right: 10px;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  padding-top: 0.5%;
+  z-index: 999;
+}
+
+.logo{
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 30px;
+}
+.logo a{
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+
+}
+.logo a span{
+  color: var(--main-color);
+  font-size: 60px;
+}
+.nav-links{
+  padding-top: 50px;
+  transition:  0.5s;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.nav-links ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-color);
+  transition: 0.3s; 
+  margin: 205px;
+  font-size: 20px;
+  position: relative;
+}
+.nav-links ul li a:active{
+  opacity: 0.7;
+}
+.nav-links ul li{
+  list-style: none;
+  font-size: 15px;
+  text-align: center;
+}
+.nav-links a:hover{
+  color: var(--text-color);
+}
+
+
+.email{
+  display: none;
+}
+.email.active{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 93%;
+  margin-top: 200px;
+  backdrop-filter: blur(35px);
+  background-color: rgba(0,0,0,0.15);
+  justify-content: center;
+  align-items: center;
+  border: white solid 2px;
+  border-radius: 10px;
+  z-index: 999999;
+}
+.email input{
+  width: 100px;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 30px;
+  width: 290px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-bottom: white solid 4px;
+  transition: all 0.3s;
+}
+.email input:focus{
+  width: 330px;
+  padding-left: 50px;
+}
+input::placeholder{
+  color: white;
+}
+.email textarea{
+  width: 200px;
+  padding: 20px;
+  font-family: poppins;
+  outline: none;
+}
+.email textarea::placeholder{
+  color: black;
+  font-size: 16px;
+}
+.email h1{
+  color: white;
+  margin-bottom: 10%;
+}
+.email label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label input:focus{
+  width: 330px;
+  padding-left: 50px;
+}
+label textarea{
+  width: 800px;
+  height: 200px;
+  padding: 10px;
+  font-family: poppins;
+  outline: none;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  flex-direction: column;
+}
+ input{
+  width: 100px;
+  margin-bottom: 30px;
+  height: 50px;
+  padding: 30px;
+  width: 290px;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-bottom: white solid 4px;
+  transition: all 0.3s;
+}
+label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form p{
+  color: white;
+  margin: 20px;
+  font-size: 14px;
+}
+
+label p{
+  color: white;
+  margin: 10px;
+  font-size: 18px;
+}
+
+label select{
+  outline: none;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 400px;
+}
+#logo{
+  width: 90%;
+  height: 1005;
+}
+.email button {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 5px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-family: poppins;
+}
+
+.email button:hover {
+  background-color: #f1f1f1;
+}
+
+.email button:active {
+  background-color: #ddd;
+}
+
+@media screen {min-width: 
+  
+}
+@media screen and (min-width: 1677px) {
+  #logo {
+    width: 80%;
+    margin-top: -200px;
+    z-index: 1;
+  }
+  .logo{
+    z-index: 9999;
+  }
+  .nav-links{
+    z-index: 9999;
+  }
+ 
+}
+@media screen and (max-width: 858px) {
+  nav a{
+    font-size: 20px;
+  }
+  .nav-links a{
+    font-size: 10px;
+  }
+  .nav-links{
+    margin-right: 10%;
+  }
+  nav .logo{
+    margin-left: 10%;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .email.active{
+    height: 95%;
+  }
+ body{
+  height: 50vh;
+ }
+ #logo{
+  width: 200%;
+ }
+ .info{
+  padding-top: -300px;
+  height: 120%;
+ }
+ nav{
+  margin-bottom: -100px;
+ }
+}
+/*Ender css*/
+.ender{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  animation: animation 4s infinite loop;
+}
+@keyframes animation {
+  0%{
+    font-size: 30px;
+  }
+  50%{
+    font-size: 40px;
+  }
+  100%{
+    font-size: 30px;
+  }
+}
+.ender img{
+  width: auto;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.twitter{
+  color: #00acee;
+  font-size: 30px;
+  margin: 10px;
+}
+.quora{
+  color: #b92b27;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.ender span{
+  color: var(--main-color);
+  font-size: 50px;
+}
+.btc{
+  color: #F2A900 ;
+  font-size: 30px;
+  margin: 10px;
+}
+
+
+/*Cursor animation*/
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform:  translate(-50%, -50%);
+  transition: 0.15s;
+  z-index: 10000000;
+  backdrop-filter: blur(2px);
+}
+.cursor-2{
+  z-index: 1000000000;
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform:  translate(-50%, -50%);
+  transition: 0.13s;
+}
+
+a:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: 0.5;
+}
+a:hover ~ .cursor-2{
+  opacity: 0;
+}
+
+
+
+/* Mobile Screen view*/
+@media screen and (max-width: 610px){
+  .nav-links ul li a{
+    font-size: 10px;
+    margin-right: 50%;
+  }
+  .nav-links ul li a i{
+    display: none;
+  }
+  .cursor{
+    display: none;
+  }
+  .cursor-2{
+    display: none;
+  }
+  .email.active input:focus{
+    width: 80%;
+  }
+  .email.active input{
+    width: 70%;
+  }
+  .email.active h1{
+    font-size: 25px;
+  }
+  .email.active p{
+    text-align: center;
+  }
+  .email.active{
+    width: 89%;
+    backdrop-filter: blur(15px);
+  }
+  .info{
+    padding-top: 200px;
+    margin-bottom: 200px;
+    height: 40%;
+  }
+  #logo{
+    width: 130%;
+  }
+  
